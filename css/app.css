@@ -58,5 +58,7 @@ body {
           margin-top: 4px;
           transition: all 0.3s;
           margin-left: 15px; }
+  body #header {
+    height: 100vh; }
 
 /*# sourceMappingURL=app.css.map */
