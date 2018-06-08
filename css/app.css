@@ -1,7 +1,62 @@
 body {
-  background: #fff; }
-  body p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px; }
+  background: #fff;
+  font-family: "Lato" !important; }
+  body section#homepage {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(-45deg, #00535e, #005e57, #00535e, #00145e);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite; }
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+    body section#homepage .container-fluid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center; }
+      body section#homepage .container-fluid .row .col-sm-12 .home h1, body section#homepage .container-fluid .row .col-sm-12 .home a, body section#homepage .container-fluid .row .col-sm-12 .home p {
+        color: #ffffff;
+        text-decoration: none; }
+      body section#homepage .container-fluid .row .col-sm-12 .home h1 {
+        font-size: 60px;
+        font-weight: 300; }
+        body section#homepage .container-fluid .row .col-sm-12 .home h1 span {
+          font-family: "Dancing Script", cursive;
+          font-size: 70px; }
+      body section#homepage .container-fluid .row .col-sm-12 .home .div-type h1 {
+        display: inline-block; }
+      body section#homepage .container-fluid .row .col-sm-12 .home .div-type .blink {
+        animation: blink 0.5s infinite; }
+@keyframes blink {
+  to {
+    opacity: 0; } }
+      body section#homepage .container-fluid .row .col-sm-12 .home .btn {
+        width: 250px;
+        margin-top: 50px;
+        border-radius: 0;
+        transition: all 0.3s;
+        font-size: 20px;
+        padding: 15px 0;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        outline: none;
+        font-weight: 300; }
+        body section#homepage .container-fluid .row .col-sm-12 .home .btn:hover {
+          background-color: #2c8071;
+          border: 2px solid #10545f;
+          transition: all 0.3s; }
+          body section#homepage .container-fluid .row .col-sm-12 .home .btn:hover .fas {
+            transform: rotate(90deg); }
+        body section#homepage .container-fluid .row .col-sm-12 .home .btn .fas {
+          margin-top: 4px;
+          transition: all 0.3s;
+          margin-left: 15px; }
 
 /*# sourceMappingURL=app.css.map */
