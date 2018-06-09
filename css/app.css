@@ -58,13 +58,30 @@ body {
           margin-top: 4px;
           transition: all 0.3s;
           margin-left: 15px; }
-  body #header {
-    height: 100vh; }
+  body #header .navbar {
+    border-bottom: 1px solid #006c73; }
     body #header .navbar .navbar-brand img {
       width: 40px; }
     body #header .navbar .navbar-collapse ul.navbar-nav {
-      margin: 0 auto; }
-      body #header .navbar .navbar-collapse ul.navbar-nav li a.navbar-brand {
-        margin: 0 20px; }
+      margin: 0 auto;
+      text-transform: uppercase; }
+      body #header .navbar .navbar-collapse ul.navbar-nav li {
+        padding: 0 10px; }
+        body #header .navbar .navbar-collapse ul.navbar-nav li a.navbar-brand {
+          margin: 0 20px; }
+        body #header .navbar .navbar-collapse ul.navbar-nav li a {
+          font-size: 18px; }
+  body section#about {
+    height: 100vh;
+    background-color: #ff9200; }
+  body section#skills {
+    height: 100vh;
+    background-color: #f2f2f2; }
+  body section#work {
+    height: 100vh;
+    background-color: #ebebeb; }
+  body section#contact {
+    height: 100vh;
+    background-color: #f2f2f2; }
 
 /*# sourceMappingURL=app.css.map */
