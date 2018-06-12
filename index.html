@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Donna Galman</title>
@@ -10,16 +11,19 @@
 
 	<!--MY CSS----->
 		<link rel="stylesheet" href="css/app.css" type="text/css">
+		<link rel="stylesheet" href="css/mixin.css" type="text/css">
 	<!--END MY CSS----->
 
 	<!--GOOGLE FONTS ------>
-		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<!--END GOOGLE FONTS ------>
 
-	<!--FONTAWESOME ------>
+	<!--ICONS LIBRARY ------>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
 	<!--END FONTAWESOME ------>
+
 </head>
 
 <body>
@@ -32,13 +36,35 @@
 						<div class="div-type">
 							<h1>I'm a </h1> &nbsp;&nbsp;<h1 class="header-sub-title" id="word"></h1>
 							<h1 class="header-sub-title blink">|</h1>
-						</div><!--.flex-->
+						</div><!--.div-type-->
 
-						<a href="#header" class="sliding-link">
-							<button class="btn">BUTTON HERE<i class="fas fa-arrow-right"></i></button>
-						</a>
+						<div class="cont-social">
+							<div class="div-social">
+								<a href="https://github.com/donnagalman" target="_blank">
+									<div class="icon">
+											<i class="fab fa-github fa-lg"></i>
+									</div><!--.icon-->
+								</a>
+
+								<a href="https://www.linkedin.com/in/donnagalman/" target="_blank">
+									<div class="icon">
+											<i class="fab fa-linkedin-in fa-lg"></i>
+									</div><!--.icon-->
+								</a>
+
+								<a href="https://www.facebook.com/dgalman" target="_blank">
+									<div class="icon">
+										<i class="fab fa-facebook-f fa-lg"></i>
+									</div><!--.icon-->
+								</a>
+							</div><!--.div-social-->
+						</div><!--.cont-social-->
 
 					</div><!--.home-->
+
+					<a href="#header" class="sliding-link">
+						<button class="btn">KNOW ME MORE<i class="fas fa-arrow-right"></i></button>
+					</a>
 
 				</div><!--.col-sm-12-->
 			</div><!--.row-->
@@ -80,14 +106,104 @@
 	<section id="about">
 	</section>
 
-	<section id="skills">
+	<section id="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="timeline">
+
+						<div class="entry">
+							<div class="title">
+								<p class="p-date">September 2016 - Present</p>
+							</div><!--.title-->
+							<div class="body">
+								<p class="p-title">Frontend Developer</p>
+								<p class="p-company">UTEENI (Connectica Directory Services (Thailand) Co</p>
+								<p class="p-address"><i class="fas fa-location-arrow"></i>Amarin Plaza, 5th Floor, 496-502 Phloen Chit Rd, Khwaeng Lumphini, Khet Pathum Wan, Krung Thep Maha Nakhon 10330</p>
+								<ul>
+									<li>Convert website template design into code using HTML, SASS, Javascript</li>
+									<li>Responsible for the maintenance and improvement of the company website </li>
+									<li>Collaborate with back-end developers to improve usability</li>
+									<li>Ensure high quality graphic standards and brand consistency</li>
+									<li>Create quality mockups and prototypes</li>
+								</ul>
+							</div><!--.body-->
+						</div><!--.entry-->
+
+						<div class="entry">
+							<div class="title">
+								<p class="p-date">April 2014 - August 2016</p>
+							</div><!--.title-->
+							<div class="body">
+								<p class="p-title">Senior Analyst (Web Designer)</p>
+								<p class="p-company">Avantice Corporation</p>
+								<p class="p-address"><i class="fas fa-location-arrow"></i>PBCOM Tower, 6795 Ayala Avenue corner V.A. Rufino St. 1226 Makati City, Philippines</p>
+								<ul>
+									<li>Designs company collaterals and ensure that they are visually effective and easy to access.</li>
+									<li>Liaising closely with superiors, other department representatives or business owners at the design stage to answer questions such as: why is the site needed, who is the target audience, who are the leading competitors, etc.</li>
+									<li>Advising on the categories and information needed to construct the site.</li>
+									<li>Designing a draft site for client approval or modification.</li>
+									<li>Writing web pages in a combination of codes such as hypertext mark-up language (HTML), JavaScript, CSS, Flash.
+</li>
+									<li>Design and distribute newsletters and other documents relating to the website and the intranet.</li>
+									<li>Testing the web sites for functionality and UI.</li>
+									<li>Help maintain web servers through download, backup and upload.</li>
+									<li>Work with existing staff to build mockups and prototypes, establish and create style guidelines and style guide documents as project deliverables.</li>
+									<li>Design and implement creative designs and graphics using advanced tools.</li>
+									<li>Work with project managers and business owners to collaborate on creative web designs.</li>
+
+								</ul>
+							</div><!--.body-->
+						</div><!--.entry-->
+
+					</div><!--.timeline-->
+				</div><!--.col-sm-12-->
+			</div><!--.row-->
+		</div><!--.container-->
 	</section>
 
-	<section id="work">
+	<section id="skills">
 	</section>
 
 	<section id="contact">
 	</section>
+
+	<footer>
+		<a href="#homepage">
+			<div class="back-to-top text-center">
+				<i class="fas fa-chevron-up fa-2x"></i>
+			</div>
+		</a>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="div-social">
+						<a href="https://github.com/donnagalman" target="_blank">
+							<div class="icon">
+									<i class="fab fa-github fa-lg"></i>
+							</div><!--.icon-->
+						</a>
+
+						<a href="https://www.linkedin.com/in/donnagalman/" target="_blank">
+							<div class="icon">
+									<i class="fab fa-linkedin-in fa-lg"></i>
+							</div><!--.icon-->
+						</a>
+
+						<a href="https://www.facebook.com/dgalman" target="_blank">
+							<div class="icon">
+								<i class="fab fa-facebook-f fa-lg"></i>
+							</div><!--.icon-->
+						</a>
+
+						<div class="copyright">
+							<p>DONNA GALMAN <i class="far fa-copyright"></i> 2018</p>
+						</div>
+					</div><!--.div-social-->
+				</div><!--.col-sm-12-->
+			</div><!--.row-->
+		</div><!--.container-fluid-->
+	</footer>
 </body>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
