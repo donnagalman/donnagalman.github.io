@@ -5,7 +5,7 @@
 			.icon
 				display: inline-block
 				display: inline-block
-				background-color: #017e78
+				background-color: #E31B6D
 				height: 55px
 				width: 55px
 				position: relative
@@ -23,6 +23,24 @@
 				left: 50%
 				transform: translate(-50%, -50%)
 
+@mixin section-title
+	.section-title
+		h1
+			text-transform: uppercase
+			text-align: center
+		hr
+			width: 150px
+			border-top: 2px solid #003f3f
+
+@mixin section-light
+	box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05)
+	border-bottom: #dddddd solid 1px
+	padding: 100px 0 130px 0
+
+@mixin section-dark
+	background: #fafafa
+	border-bottom: #dddddd solid 1px
+	padding: 100px 0 130px 0
 
 body
 	background: #fff
@@ -83,9 +101,11 @@ body
 				color: #ffffff
 				outline: none
 				font-weight: 300
+				&:focus
+					box-shadow: none
 				&:hover
 					background-color: #2c8071
-					border: 2px solid #10545f
+					border: 2px solid #509e90
 					transition: all 0.3s
 					.fas
 						transform: rotate(90deg)
@@ -96,11 +116,11 @@ body
 
 	#header
 		.navbar
-			border-bottom: 1px solid #006c73
-			background-color: #ffffff
+			border-bottom: 2px solid #E31B6D
+			background-color: #003f3f
 			.navbar-brand
 				img
-					width: 40px
+					width: 60px
 			.navbar-collapse
 				ul.navbar-nav
 					margin: 0 auto
@@ -111,25 +131,140 @@ body
 							margin: 0 20px
 						a
 							font-size: 18px
+							color: #ffffff
+							font-weight: 200
 
 	section#about
-		height: 100vh
-		background-color: #f5f5f5
+		@include section-light
+		min-height: 300px
+		.container
+			.row-section-title
+				.col-sm-12
+					@include section-title
 
 	section#skills
-		height: 100vh
+		@include section-dark
+		min-height: 300px
 		background-color: #f2f2f2
+		.container
+			.row-section-title
+				margin-bottom: 60px
+				.col-sm-12
+					@include section-title
+			.row-skillbar
+				.col-frontend
+					h4
+						font-weight: 400
+					h4.creative
+							margin-top: 100px
+					.skillbar
+						position: relative
+						display: block
+						width: 100%
+						margin-bottom: 30px
+						.skill-bar-percent
+							color: #777777
+							font-size: 16px
+							margin-bottom: 10px
+							font-weight: 400
+							text-align: right
+						.skillwrap
+							background-color: #fff
+							border: 1px solid #bababa
+							padding: 2px
+							.skillbar-bar
+								border-collapse: separate
+								border-spacing: 100px
+								height: 15px
+								width: 0px
+								background-image: -webkit-linear-gradient(0deg, #f409ff 0%, #E31B6D 100%)
+
+
 
 	section#work
-		background-color: #ebebeb
+		@include section-dark
 		.container
 			.row
 				.col-sm-12
+					@include section-title
+					.div-work
+						.entry
+							text-align: center
+							margin: 80px 0 50px
+							.title
+								text-transform: uppercase
+							.desc
+								font-weight: 100
+								margin: 30px 0 20px
+								p
+									&:first-child
+										margin-bottom: 5px
+								p.tasks
+									span.dot
+										margin: 0 10px 0 5px
+										color: #E31B6D
+							.company
+								display: flex
+								max-width: 850px
+								margin: 0 auto
+								div
+									font-size: 14px
+									span
+										font-weight: 600
+									a
+										color: #E31B6D
+										&:hover
+											text-decoration: none
+											font-style: italic
+									&:first-child
+										width: 60%
+										text-align: left
+									&:last-child
+										width: 40%
+										text-align: right
+
+							.project
+								max-width: 850px
+								margin: 50px auto
+								h5
+									text-transform: uppercase
+									font-weight: 300
+									text-align: left
+									margin-bottom: 30px
+									text-decoration: underline
+								.flex
+									.proj
+										display: inline-table
+										margin: 0 20px
+										a
+											color: #5a5a5a
+											&:hover
+												color: #E31B6D
+												text-decoration: none
+											.div-img
+												position: relative
+												width: 200px
+												height: 200px
+												overflow: hidden
+												border-radius: 50%
+												margin: 0 auto
+												border: 1px solid #fcabcc
+												img
+													position: absolute
+													top: -9999px
+													left: -9999px
+													right: -9999px
+													bottom: -9999px
+													margin: auto
+											.details
+												margin-top: 20px
+
+
 					.timeline
 						width: 100%
-						background: #ffffff
-						padding: 100px 50px
+						padding: 20px 50px
 						position: relative
+						margin-top: 80px
 						&::before
 							content: ''
 							position: absolute
@@ -147,6 +282,9 @@ body
 							clear: both
 							text-align: left
 							position: relative
+							&:last-child
+								.body
+									margin: 0 0 0
 							.title
 								margin-bottom: .5em
 								float: left
@@ -159,7 +297,7 @@ body
 									position: absolute
 									width: 15px
 									height: 15px
-									border: 4px solid salmon
+									border: 4px solid #E31B6D
 									background-color: #ffffff
 									border-radius: 100%
 									top: 15%
@@ -174,6 +312,7 @@ body
 								float: right
 								width: 66%
 								padding-left: 30px
+
 								p.p-title
 									text-transform: uppercase
 									font-size: 20px
@@ -193,19 +332,84 @@ body
 
 
 	section#contact
-		height: 100vh
-		background-color: #f2f2f2
+		@include section-light
+		padding: 80px 0
+		.container
+			.row
+				.col-sm-12
+					.section-title
+						p
+							margin-bottom: 0
+							font-weight: 100
+							text-transform: uppercase
+							font-size: 15px
+						h1
+							font-size: 75px
+							letter-spacing: 5px
+							margin-top: -20px
+							margin-left: -6px
+							text-transform: uppercase
+
+					.div-msg-me
+						margin: 80px 0
+						.icon
+							.bubble
+								position: relative
+								width: 120px
+								height: 120px
+								border-radius: 150px
+								margin: 0 auto 76px
+								border: 5px solid #E31B6D
+								&::after
+									content: ""
+									position: absolute
+									top: 100%
+									left: 25px
+									width: 0
+									height: 0
+									border-left: 5px solid transparent
+									border-right: 15px solid transparent
+									border-top: 24px solid #E31B6D
+									transform: rotate(17deg)
+								span
+									padding: 30px 0
+									display: block
+									text-align: center
+									line-height: 1
+									font-size: 15px
+									text-transform: uppercase
+									color: #5a5a5a
+									strong
+										font-weight: 500
+										text-transform: uppercase
+										font-size: 18px
+
+						.contact-details
+							.entry
+								.icon
+									display: inline-block
+									margin-right: 10px
+								.data
+									display: inline-block
+									font-size: 22px
+									font-weight: 100
+
+
+
 
 
 	footer
 		padding: 50px 0
 		position: relative
+		background: #003f3f
+		border-bottom: 5px solid #E31B6D
 		a
 			color: #ffffff
 			&:hover
 				color: #ffffff
+				text-decoration: none
 			.back-to-top
-				background-color: red
+				background-color: #E31B6D
 				height: 60px
 				width: 60px
 				margin: -80px auto 50px
@@ -215,7 +419,13 @@ body
 		.container-fluid
 			.row
 				.col-sm-12
+					.icon-dark
+						background-color: #215f5f !important
+						&:hover
+							background-color: #14b7af !important
 					@include social
 					p
 						margin-top: 30px
 						margin-bottom: 0
+						color: #fafafa
+						font-weight: 100
