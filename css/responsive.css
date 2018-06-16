@@ -1,3 +1,41 @@
-
+@media (max-width: 992px) {
+  body section#homepage .container-fluid .row .col-sm-12 .home h1 {
+    font-size: 46px; }
+    body section#homepage .container-fluid .row .col-sm-12 .home h1 span {
+      font-size: 50px; }
+  body section#work .container {
+    max-width: none; }
+    body section#work .container .row .col-sm-12 .div-work .entry .project .flex .proj a .div-img {
+      width: 150px;
+      height: 150px; } }
+@media (max-width: 768px) {
+  body section#homepage .container-fluid .row .col-sm-12 .home h1 {
+    font-size: 36px; }
+    body section#homepage .container-fluid .row .col-sm-12 .home h1 span {
+      font-size: 40px; } }
+@media (max-width: 576px) {
+  body section#homepage .container-fluid .row .col-sm-12 .home h1 {
+    font-size: 28px; }
+    body section#homepage .container-fluid .row .col-sm-12 .home h1 span {
+      font-size: 30px; }
+  body section#contact .container .row .col-sm-12 .section-title p {
+    font-size: 11px; }
+  body section#contact .container .row .col-sm-12 .section-title h1 {
+    font-size: 48px;
+    margin-top: -10px;
+    letter-spacing: 8px;
+    margin-left: 4px; }
+  body section#contact .container .row .col-sm-12 .div-msg-me .contact-details .entry .data {
+    font-size: 16px; } }
+@media (max-width: 375px) {
+  body section#homepage .container-fluid .row .col-sm-12 .home h1 {
+    font-size: 24px; }
+    body section#homepage .container-fluid .row .col-sm-12 .home h1 span {
+      font-size: 28px; } }
+@media (max-width: 320px) {
+  body section#homepage .container-fluid .row .col-sm-12 .home h1 {
+    font-size: 20px; }
+    body section#homepage .container-fluid .row .col-sm-12 .home h1 span {
+      font-size: 22px; } }
 
 /*# sourceMappingURL=responsive.css.map */

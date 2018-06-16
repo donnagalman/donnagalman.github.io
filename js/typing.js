@@ -1,4 +1,4 @@
-const words = ["Frontend Developer.", "Calligraphist Wanna Be.", "Wife and a future mom :)"];
+const words = ["Frontend Developer."];
 let i = 0;
 let timer;
 
@@ -9,10 +9,10 @@ function typingEffect() {
 			document.getElementById('word').innerHTML += word.shift();
 		} else {
 			clearTimeout(timer);
-			deletingEffect();
+
 			return false;
 		};
-		timer = setTimeout(loopTyping, 200);
+		timer = setTimeout(loopTyping, 300);
 	};
 	loopTyping();
 };
