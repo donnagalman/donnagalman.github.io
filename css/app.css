@@ -111,6 +111,20 @@ body {
     body section#about .container .row-section-title .col-sm-12 .section-title hr {
       width: 150px;
       border-top: 2px solid #003f3f; }
+    body section#about .container .row-section-title .col-sm-12 .inner-row {
+      margin-top: 80px;
+      text-align: justify;
+      align-items: center; }
+      body section#about .container .row-section-title .col-sm-12 .inner-row .col-md-7 h3 {
+        font-family: "Dancing Script", cursive;
+        font-size: 46px; }
+      body section#about .container .row-section-title .col-sm-12 .inner-row .col-md-7 p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 2;
+        margin-top: 30px; }
+      body section#about .container .row-section-title .col-sm-12 .inner-row .col-md-5 img {
+        max-width: 100%; }
   body section#skills {
     background: #fafafa;
     border-bottom: #dddddd solid 1px;
